@@ -1,0 +1,73 @@
+/* repository-list.component.css */
+.repository-list {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+.repository-items {
+  list-style: none;
+  padding: 0;
+}
+
+.repository-item {
+  display: flex; /* Utilizamos flexbox para la disposición de los elementos */
+  align-items: center; /* Centra verticalmente los elementos */
+  border: 1px solid #e1e4e8;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #fff;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.repository-details {
+  flex: 1; /* Ocupa todo el espacio disponible en el contenedor flex */
+}
+
+.repository-name {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.repository-name a {
+  text-decoration: none;
+  color: #0366d6;
+  transition: color 0.2s;
+}
+
+.repository-name a:hover {
+  color: #0056b3;
+}
+
+.repository-description {
+  font-size: 1rem;
+  margin: 10px 0;
+}
+
+.repository-stars {
+  font-size: 1rem;
+  margin: 5px 0;
+  color: #6a737d;
+}
+
+.repository-stars i {
+  font-size: 1.2rem;
+  margin-right: 5px;
+  color: #f0d91d;
+}
+
+.repository-language {
+  font-size: 1rem;
+  margin: 5px 0;
+  color: #586069;
+}
+
+.repository-avatar {
+  margin-left: 15px; /* Agrega un margen a la izquierda para separar la imagen del avatar */
+}
+
+.repository-avatar img {
+  width: 150px; /* Ajusta el ancho de la imagen según tus preferencias */
+  height: 150px; /* Establece la altura igual al ancho para hacer la imagen cuadrada */
+  border-radius: 5px; /* Agrega un borde redondeado (opcional) */
+}

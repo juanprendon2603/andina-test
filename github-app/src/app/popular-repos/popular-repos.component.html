@@ -1,0 +1,28 @@
+<!-- repository-list.component.html -->
+<div class="repository-list">
+  <h1>Lista de Repositorios Populares en GitHub</h1>
+  <ul class="repository-items">
+    <li *ngFor="let repo of repositories" class="repository-item">
+      <div class="repository-details">
+        <h2 class="repository-name">
+          <a [href]="repo.html_url" target="_blank">{{ repo.name }}</a>
+        </h2>
+        <p class="repository-description"><strong>Descripción:</strong> {{ repo.description }}</p>
+        <p><strong>Propietario:</strong> {{ repo.owner.login }}</p>
+        <p><strong>Fecha de Creación:</strong> {{ repo.created_at | date: 'dd/MM/yyyy' }}</p>
+        <p class="repository-stars">
+          <i class="fa fa-star"></i> {{ repo.stargazers_count }}
+        </p>
+        <p><strong>Lenguaje:</strong>
+          {{ repo.language ? repo.language : 'No especificado' }}
+        </p>
+      </div>
+      <div class="repository-avatar">
+        <img [src]="repo.owner.avatar_url" alt="Avatar">
+      </div>
+    </li>
+  </ul>
+</div>
+
+
+
